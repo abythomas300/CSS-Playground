@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
 
 /* styles */
@@ -31,6 +32,9 @@
 .links{
     display: flex;
     justify-content: flex-end;
+}
+.login{
+    margin-left: 20px;
 }
 .menu div{
     border: 1px solid #fff; /*For Debugging */
@@ -58,3 +62,63 @@
 .header div{
     border: 1px solid #9b8a8a; /*For debugging*/
 }
+
+
+/* PHOTO-GRID-CONTAINER STARTS */
+.photo-grid-container{
+    background-color: #9b8a8a;
+    display: flex;
+    justify-content: center;
+}
+.photo-grid{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.photo-grid-item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.photo-grid div{
+    border: 1px solid red; /*For Debugging*/
+}
+
+
+/*END OF ALGINMENT BASED ON PARENT CONTAINER*/
+/* - - - - - - - - - - - - - - - - - - - - -*/
+/*START OF ALIGNMENT DIRECTLY OF INDIVIDUAL FLEX ITEMS*/
+
+/* Changing order of flex items */
+.first-item{
+    order: 1;
+}
+.last-item{
+    order: -1;
+} 
+
+/* align-self:flex-start,flex-end,center etc. 
+A special property that is created for alignment of individual flex elements, it overrides the parent container's justify content statement */
+
+.socials,.subscribe{
+    align-self: flex-end;
+ }
+
+
+ /* FOOTER STARTS */
+ .footer{
+    display: flex;
+    justify-content: space-between;
+ }
+ .footer-item{
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+ }
+ .footer-item.footer-three{
+    flex: 1;
+ }
