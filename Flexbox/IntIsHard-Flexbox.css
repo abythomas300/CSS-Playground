@@ -1,0 +1,60 @@
+/* CSS Reset */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* styles */
+.menu-container{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0px;
+    display: flex;
+    justify-content:center
+}
+
+.menu{
+    border: 1px solid #ffffff; /*For Debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between ; /*HORIZONTAL ALIGNMENT*/
+    
+     
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu div{
+    border: 1px solid #fff; /*For Debugging */
+}
+
+
+/* HEADER CONTAINER SECTION */
+.header-container{
+    display: flex;
+    background-color: #D6E9FE;
+    color: #5995DA;
+    justify-content: center; /*HORIZONTAL ALIGNMENT*/
+}
+
+.header{
+    border: 1px solid #9b8a8a; /*For debugging*/
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    height: 300px;
+    /* padding: 20px 0px; justify-content:stretch did not work properly when padding is given, so I disabled it for the time being. */
+    align-items: center; /*VERTICAL ALIGNMENT*/
+}
+
+.header div{
+    border: 1px solid #9b8a8a; /*For debugging*/
+}

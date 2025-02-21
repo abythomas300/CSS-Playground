@@ -1,0 +1,21 @@
+*{
+    padding:0px; 
+    margin:0px;
+    color:white;
+    box-sizing: border-box;
+}
+.box-one{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid rebeccapurple;
+
+}
+.box-two{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid yellow;
+}
