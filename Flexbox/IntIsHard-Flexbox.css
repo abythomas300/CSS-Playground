@@ -22,7 +22,7 @@
 }
 
 .menu{
-    border: 1px solid #ffffff; /*For Debugging */
+    /* border: 1px solid #ffffff; For Debugging */
     width: 900px;
     display: flex;
     justify-content: space-between ; /*HORIZONTAL ALIGNMENT*/
@@ -37,7 +37,7 @@
     margin-left: 20px;
 }
 .menu div{
-    border: 1px solid #fff; /*For Debugging */
+    /* border: 1px solid #fff; For Debugging */
 }
 
 
@@ -50,7 +50,7 @@
 }
 
 .header{
-    border: 1px solid #9b8a8a; /*For debugging*/
+    /* border: 1px solid #9b8a8a; For debugging */
     display: flex;
     justify-content: space-between;
     width: 900px;
@@ -60,7 +60,7 @@
 }
 
 .header div{
-    border: 1px solid #9b8a8a; /*For debugging*/
+    /* border: 1px solid #9b8a8a; For debugging */
 }
 
 
@@ -80,11 +80,11 @@
 .photo-grid-item{
     width: 300px;
     height: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .photo-grid div{
-    border: 1px solid red; /*For Debugging*/
+    /* border: 1px solid red; For Debugging */
 }
 
 
@@ -114,11 +114,25 @@ A special property that is created for alignment of individual flex elements, it
     justify-content: space-between;
  }
  .footer-item{
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background-color: #D6E9FE;
     height: 200px;
     flex: 1;
  }
- .footer-item.footer-three{
-    flex: 1;
+.footer-one,
+.footer-three{
+    flex: initial;
+    width: 300px; /*We should always define width when giving flex:initial because that's the one thing that makes a item static.(obviously)*/
+    background-color: #5995DA;
+}
+
+ .footer-two{
+    flex: 2;
  }
+
+
+ .signup{
+    margin-left: auto;
+} /*This pushed signup to the most right*/
+/*Earlier we have done this by adding an extra div for the links part and giving the space-between rule.*/
+/*Using margin-auto, we can implement the same thing without another extra div (A pro gamer move).*/
